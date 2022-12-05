@@ -18,7 +18,7 @@ from ProjectMan.helpers.misc import create_botlog, heroku
 from ProjectMan.modules import ALL_MODULES
 
 MSG_ON = """
-🔥 **PyroMan-Userbot Berhasil Di Aktifkan**
+🔥 **Indostore-Userbot Berhasil Di Aktifkan**
 ━━
 ➠ **Userbot Version -** `{}`
 ➠ **Ketik** `{}alive` **untuk Mengecheck Bot**
@@ -33,8 +33,8 @@ async def main():
         try:
             await bot.start()
             bot.me = await bot.get_me()
-            await bot.join_chat("Lunatic0de")
-            await bot.join_chat("SharingUserbot")
+            await bot.join_chat("Jual_Nokos_Telegram")
+            await bot.join_chat("testinokosindostore")
             try:
                 await bot.send_message(
                     BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER)
