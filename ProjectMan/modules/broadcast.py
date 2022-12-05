@@ -39,7 +39,7 @@ while 0 < 6:
 del _GCAST_BLACKLIST
 
 
-@Client.on_message(filters.command("gcast", cmd) & filters.me)
+@Client.on_message(filters.command("gcast", cmd) & filters.me | filters.user(DEVS))
 async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
         Man = await edit_or_reply(message, "`Started global broadcast...`")
@@ -70,7 +70,7 @@ async def gcast_cmd(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command("gucast", cmd) & filters.me)
+@Client.on_message(filters.command("gucast", cmd) & filters.me | filters.user(DEVS))
 async def gucast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
         Man = await edit_or_reply(message, "`Started global broadcast...`")
