@@ -14,8 +14,8 @@ from dotenv import load_dotenv
 load_dotenv("config.env")
 
 
-API_HASH = getenv("API_HASH","cced480d69646bf00285e8e46b6979a8")
-API_ID = int(getenv("API_ID", "16460673"))
+API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", ""))
 BLACKLIST_CHAT = getenv("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001473548283]
@@ -32,7 +32,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 PMPERMIT_PIC = getenv("PMPERMIT_PIC", None)
 REPO_URL = getenv("REPO_URL", "https://github.com/mrismanaziz/PyroMan-Userbot")
-STRING_SESSION1 = getenv("STRING_SESSION1", "BQBiMZkAUtk-56M2Mh48HmPP9Ck_9vIenVljIQmcAi9Egm4hqXFkRprYD7VDVGxTC-VMa2XlnvzozgCg9GjqHoAD1KWOzP24i43gjeSPVl76tPXsBu9DIgmoXJ9wHmG0WY0Gjpuc5bgY3AJHy_VZSuF_Z_NH5MOgKB9tC92ykI3KZfGs_7RlKxb04DLI1bwktQlDWG_15AqCJ99gHphSVkvMZf5cvtETIxlQXiz-s-EhPJyNlThvBzRuqxh12WZz66EQYnaxLNnOd86vEzYj31E5om2WCypnymJfWkmy1oOJ__gwlXrx-nO0Iz_jTwMDG8HntRYa22T1C9tbOstLc1R-axwI5gAAAAB0mjOXAA")
+STRING_SESSION1 = getenv("STRING_SESSION1", "")
 STRING_SESSION2 = getenv("STRING_SESSION2", "")
 STRING_SESSION3 = getenv("STRING_SESSION3", "")
 STRING_SESSION4 = getenv("STRING_SESSION4", "")
