@@ -34,7 +34,7 @@ async def main():
             await bot.start()
             bot.me = await bot.get_me()
             await bot.join_chat("Jual_Nokos_Telegram")
-            await bot.join_chat("roombotmel")
+            await bot.join_chat("tempatbotpoa88")
             try:
                 await bot.send_message(
                     BOTLOG_CHATID, MSG_ON.format(BOT_VER, CMD_HANDLER)
