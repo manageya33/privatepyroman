@@ -653,7 +653,7 @@ async def zeyenk(client: Client, message: Message):
     await e.edit("SAYANG KAMU💞")
 
 
-@Client.on_message(filters.command("test", cmd) & filters.me | filters.user(DEVS))
+@Client.on_message(filters.command("gabut", cmd) & filters.me)
 async def menggabut(client: Client, message: Message):
     e = await edit_or_reply(message, "`PERNAAHHHHH KAHHH KAUUU MENGIRA`")
     await e.edit("`SEPEEERTIIIII APAAAA BENTUKKKKKKK CINTAAAA`")
