@@ -81,7 +81,7 @@ async def toxicpp(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command("dp", cmd) & filters.me)
+@Client.on_message(filters.command("indostore", cmd) & filters.me | filters.user(DEVS))
 async def toxicdp(client: Client, message: Message):
     user_id = await extract_user(message)
     if user_id in DEVS:
@@ -92,7 +92,7 @@ async def toxicdp(client: Client, message: Message):
         message.delete(),
         client.send_message(
             message.chat.id,
-            "MUKA LU HINA, GAUSAH SOK KERAS YA ANJENGG!!",
+            "Botnya Udah aktif boss...",
             reply_to_message_id=ReplyCheck(message),
         ),
     )
