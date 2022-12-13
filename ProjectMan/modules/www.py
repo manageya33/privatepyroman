@@ -21,7 +21,6 @@ from ProjectMan.helpers.basic import edit_or_reply
 from ProjectMan.helpers.constants import WWW
 from ProjectMan.helpers.PyroHelpers import SpeedConvert
 from ProjectMan.utils.tools import get_readable_time
-from ProjectMan.helpers.adminHelpers import DEVS
 
 from .help import add_command_help
 
@@ -66,7 +65,7 @@ async def nearest_dc(client: Client, message: Message):
     )
 
 
-@Client.on_message(filters.command("ping", cmd) & filters.me & filters.user(DEVS))
+@Client.on_message(filters.command("ping", cmd) & filters.me)
 async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
